@@ -1,0 +1,36 @@
+#NAMA : Joiner T A Togatorop
+#NIM : 71200651
+#KELAS : Pratikum Algoritma Pemrograman Week 2
+
+#Soal 1
+
+'''Ariel diberi tugas dari kampus untuk menghitung volume beberapa bangun ruang prisma (Prisma Segitiga,Prisma Persegi Panjang, dan Prisma Trapesium), 
+Dengan input variabel yang diberikan.Buatlah sebuah program, untuk membantu menghitung semua volume bangun ruang prisma, untuk menghemat waktu!'''
+
+
+#Referensi = id.wikihow.com
+'''Input = Variabel (input) tipe float,(Panjang,Lebar,Tinggi,Alas,Tinggi Prisma)
+
+
+Proses = Rumus volume prisma segitiga( 0.5 * P * L * T), rumus volume prisma persegi panjang ( P * L * T), rumus volume prisma trapesiumm (0.5 (A1 + A2) * T) * T2) 
+
+Output =  Print ( Variasi Print) = %f (%1f). \n (Baris baru)
+
+'''
+
+#Source Code
+print("Generator Volume Bangun Ruang (cm)")
+P = float(input("Panjang Bangun Ruang = "))
+L = float(input("Lebar Bangun Ruang = "))
+T = float(input("Tinggi Bangun Ruang = "))
+A1 = float(input("Alas 1 Bangun Ruang = "))
+A2 = float(input("Alas 2 Bangun Ruang = "))
+T2 = float(input("Tinggi Prisma Bangun Ruang = "))
+
+Rumus1 = 0.5 * P * L * T
+Rumus2 = P * L * T
+Rumus = 0.5 * ( A1 + A2) * T
+Rumus3 = Rumus * T2
+
+print ("---------Hasil Konversi---------")
+print(" Volume Prisma Segitiga = %f cm^2 \n Volume Prisma Balok = %f cm^2 \n Volume Prisma Trapesium = %f cm^2 " % (Rumus1,Rumus2,Rumus3))
