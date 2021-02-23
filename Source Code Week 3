@@ -1,0 +1,45 @@
+#NAMA : Joiner T A Togatorop
+#NIM : 71200651
+#KELAS : Pratikum Algoritma Pemrograman Week 3
+
+#Soal 1
+#Ariel adalah seorang Guru SD Kelas 5, semenjak pandemi Covid-19, seluruh kegiatan pembelajaran menjadi Online
+#Buatlah sebuah program yang dapat mencatat jumlah absensi siswa dan laporan pembelajaran berupa tugas dan problem pada saat belajar online!
+
+''' Input : Variabel (input) Str & input(eval)
+
+Proses : If Else Ya|Tidak ("...")
+
+Output : hasil input(User) 
+'''
+
+#SourceCode
+
+Ya = 1
+Tidak = 2
+
+print("Daftar Siswa Hadir")
+x = str(input("Nama Siswa = "))
+c = str(input("Nama Siswa = "))
+v = str(input("Nama Siswa = "))
+print("List Daftar Hadir \n%s \n%s \n%s" % (x,c,v))
+
+print("---Laporan Pembelajaraan Online Guru----")
+b = str(input("Nama Guru Pembuat Laporan : "))
+print("Guru %s silakan mengisi laporan online di bawah ini!" % (b))
+m = eval(input("Apakah semua siswa hadir [Ya/Tidak] : "))
+if m == 1 :
+    print("Semua siswa hadir dalam kelas!")
+else :
+    f = int(input("Jumlah siswa yang tidak hadir : "))
+a = eval(input("Apakah ada problem dalam proses mengajar [Ya/Tidak] "))
+if a == 1 :
+    j = input("Problem seperti apa : ")
+else :
+    print("Terimakasih telah mengajar dengan baik!")
+o = eval(input("Apakah ada tugas yang diberikan [Ya/Tidak] : "))
+if o == 1 :
+    u = input("Nama tugas yang diberikan : ")
+    print("Terimakasih telah mengajar dengan baik dan mengisi laporan ini!")
+else :
+    ("Terimakasih telah mengajar dengan baik dan mengisi laporan ini!")
