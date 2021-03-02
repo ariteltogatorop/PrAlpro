@@ -1,0 +1,31 @@
+#Nama : Joiner  Tennye Ariel Togatorop
+#NIM : 71200651
+#Kelas Alpro Week 4
+
+#Soal : Buatlah fungsi program yang dapet memasukkan data nama karyawan, penjualan, gaji, dan bonus didapat jika penjualan melebihi gaji karyawan
+
+#Referensi : https://pynative.com 
+'''
+input : def func nama karyawan, penjualan + def func gaji + def func nama karyawan + bonus 
+
+proses :Penjualan = 10 Juta + Gaji = 5 Juta + Bonus = 500 Ribu!
+
+output : Menggunakan \n + print
+'''
+
+#Source Code :
+
+print("-----Tabel Gaji Karyawan-----")
+def penjualan(nama,penjualan=10) :
+    print("Nama Karyawan : ", nama, "\nTotal Penjualan : ", penjualan, "Juta")
+
+def gajikar(gaji=5) :
+    print("Gaji Karyawan : ", gaji)
+
+def bonus(nama, bonus=500) :
+    print("Nama Karyawan : ", nama, "\nTotal Bonus : ", bonus, "Juta")
+    print("Terimakasih!")
+
+penjualan("Joiner",30)
+gajikar(20)
+bonus("Joiner", 2)
