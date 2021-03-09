@@ -1,0 +1,85 @@
+#Nama : Joiner Tennye Ariel Togatorop
+#NIM : 71200651 
+
+''' Soal, bantulah Tulus dengan membuat tabel perhitungan perpangkatan, penambahan, pengurangan dengan instan menggunakan perulangan'''
+#Input : 3 func, 3 def pangkat,penambahan, pengurangan. Input user (int, input)
+
+#Proses : start : True, stop : False, pilihan(input user), Nested If pilihan == 1, pilihan == 2. Stop 
+
+#Output : rumus nested IF, for in range (1,10+1,1). Operasi **, +, -. print ()
+
+#SourceCode
+def daftarpangkat ():
+    print("\n Hallo Tulus, ingin melihat tabel pangkat?")
+    print("1. Tabel Pangkat Bil 2\n2. Tabel Pangkat Bil 3\n3 Tabel Pangkat Bil 4\n4. Bukan\n5.Keluar ")
+def daftartambah():
+    print("\n Hallo Tulus, ingin melihat tabel penambahan?")
+    print("1. Tabel Penambahan Bil 2\n2. Tabel Penambahan Bil 3\n3 Tabel Penambahan Bil 4\n4. Bukan lagi\n5.Keluar ")
+def daftarkurang():
+    print("\n Hallo Tulus, ingin melihat tabel pengurangan?")
+    print("1. Tabel Pengurangan Bil 2\n2. Tabel Pengurangan Bil 3\n3 Tabel Pengurangan Bil 4\n4. Keluar ")
+start = True
+
+while start :
+    daftarpangkat()
+    pilihan = int(input("Pilih yang mana? "))
+    if pilihan == 1 :
+        for y in range (1,10+1,1) :
+            print(y, "^ 2", "=", y**2)
+            start = False
+        print("Silahkan di hafal!")
+    if pilihan == 2 :
+        for y in range (1,10+1,1) :
+            print(y, "^ 3", "=", y**3)
+            start = False
+        print("Silahkan di hafal!")
+    if pilihan == 3 :
+        for y in range (1,10+1,1) :
+            print(y, "^ 4", "=", y**4)
+            start = False
+        print("Silahkan di hafal!")
+    if pilihan == 5 : 
+        print("\n Terimakasih")
+        start = False
+    if pilihan == 4 :
+        daftartambah()
+        pilihan1 = int(input("Pilih yang mana? "))
+        if pilihan1 == 1 :
+            for x in range (1,10+1,1) :
+                print(x,"+ 2", "=" , x + 2 )
+                start = False
+            print("Silahkan di hafal!")
+        if pilihan1 == 2 :
+            for x in range (1,10+1,1) :
+                print(x,"+ 3", "=" , x + 3 )
+                start = False
+            print("Silahkan di hafal!")
+        if pilihan1 == 3 :
+            for x in range (1,10+1,1) :
+                print(x,"+ 4", "=" , x + 4 )
+                start = False
+            print("Silahkan di hafal!")
+        if pilihan1 == 5 :
+            print("\n Terimakasih")
+            start = False
+        if pilihan1 == 4 :
+            daftarkurang()
+            pilihan2 = int(input("Pilih yang mana ? "))
+            if pilihan2 == 1 :
+                for i in range(1,10+1,1) :
+                    print(i,"- 2", "=", i-2)
+                    start = False
+                print("Silahkan di hafal!")
+            if pilihan2 == 2 :
+                for i in range(1,10+1,1) :
+                    print(i,"- 3", "=", i-3)
+                    start = False
+                print("Silahkan di hafal!")
+            if pilihan2 == 3 :
+                for i in range(1,10+1,1) :
+                    print(i,"- 4", "=", i-4)
+                    start = False
+                print("Silahkan di hafal!")
+            if pilihan2 == 4 :
+                print("\n Terimakasih")
+                start = False
