@@ -1,0 +1,33 @@
+#Nama : Joiner Tennye Ariel Togatorop
+#NIM : 71200651
+#Universitas Kristen Duta Wacana.
+
+''' Soal : Buatlah program, untuk pengecekan password apakah sudah sesuai dengan kriteria nya ?'''
+ 
+#https://www.w3resource.com/python-exercises/string/python-data-type-string-exercise-88.php
+
+''' Input = def (void), input user tentang password.
+
+Proses = func. uppercase,lowercase,len(),digits. if not(kalimat perlu 1 huruf besar)
+
+
+Output = .append("Kalimat perlu 1 huruf besar, dsb), return.
+'''
+
+#Source Code
+def pengecek(p):
+    pesan = []
+    if not any(x.isupper() for x in p) :
+        pesan.append("Password ini perlu 1 huruf besar")
+    if not any(x.islower() for x in p) :
+        pesan.append("Password ini perlu 1 huruf kecil")
+    if len(p) < 6 :
+        pesan.append("Password ini harus mempunyai setidaknya 6 karakter")
+    if not any(x.isdigit() for x in p) :
+        pesan.append("Password ini hatus mempunyai 1 angka")
+    if not pesan :
+        pesan.append("Sudah Sesuai Kriteria")
+    return pesan
+
+s = input("Buatlah password anda : ")
+print(pengecek(s))
