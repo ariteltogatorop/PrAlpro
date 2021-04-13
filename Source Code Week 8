@@ -1,0 +1,33 @@
+#Nama : Joiner Tennye Ariel Togatorop
+#NIM : 71200651 
+
+'''Andi ingin mengringkas tugas bahasa Indonesia, bantu Andi untuk memilih kata - kata & kalimat yang panjang, untuk bisa di ringkas'''
+
+#Source :  https://www.w3resource.com/python-exercises/file/python-io-exercise-8.php
+
+#Input : def(fname): , return x, print(def(fname). 2. def(fname) : return y, print(def(fname)
+
+#Proses : 1. with / as open(fname, r) + split(). Looping for. MaxLen = len(max , key=len)). IF check. Return!
+#2. With / as open(fname,r) + splitlines(). Looping for. MaxLen = len(max, key=len). IF check. Return!
+
+#Output : print(def(fname) Output = ???
+
+
+#SourceCode!
+def ambilkata(fname):
+    with open(fname, 'r') as handles :
+        kata = handles.read().split()
+        for i in kata :
+            max1 = len(max(kata, key=len))
+            if len(i) == max1 :
+                return (i)
+
+def ambilkalimat(fname):
+    operand = open(fname).read().splitlines()
+    for y in operand :
+        max2 = len(max(operand, key=len))
+        if len(y) == max2 :
+            return(y)
+
+print(ambilkata('Contoh.txt'))
+print(ambilkalimat('Contoh.txt'))
