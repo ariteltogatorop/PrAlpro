@@ -1,0 +1,34 @@
+#Nama : Joiner Tennye Ariel Togatorop
+#NIM : 71200651
+#Universitas Kristen Duta Wacana
+
+#Buatlah sebuah program sederhana, yang bisa di ubahkan menjadi daftar penjualan di sebuah toko mebel! Menggunakan metode list!
+
+#https://www.w3resource.com/python-exercises/list/python-data-type-list-exercise-7.php
+
+'''Input = Assigment, List Kode [10,20,30,40,40,40,50,50] , Daftar[], Count = 0
+
+
+Proses : For looping i in list!, append, add,set,len,sort
+
+
+Output : Kode Barang : , List Daftar Penjualan :, Total Penjualan
+'''
+
+#SourceCode :
+a = [10,10,30,10,30,50,50,50,30,10]
+
+kode_barang = []
+count = len(a)
+kode_yangsama = set()
+for x in a :
+    if x not in kode_yangsama :
+        kode_barang.append(x)
+        kode_yangsama.add(x)
+        kode_barang.sort()
+print("Kode  Barang : ", kode_barang)
+for y in kode_barang :
+    hasil : print("Nama Benda : Meja[1]  ,  Kursi[2]  ,  Pintu[3]  ,  Kaca[4]  ,  Kusen[5]", "Kode : " , y)
+for v in kode_yangsama :
+    hasil1 : print("Nama Benda : Meja[1]  ,  Kursi[2]  ,  Pintu[3]  ,  Kaca[4]  ,  Kusen[5]", "Kode : " , v)
+print("Total barang yang terjual : ", count)
