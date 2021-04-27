@@ -1,0 +1,38 @@
+#Nama : Joiner Tennye Ariel Togatorop
+#NIM : 71200651
+#Universitas Kristen Duta Wacana
+
+#Buatlah program sederhana yang dapat menghitung sebaran nilai test yang didapat siswa!
+#Source : https://www.w3resource.com/python-exercises/dictionary/python-data-type-dictionary-exercise-61.php
+'''
+Input = from import module(counter) + def function() + tabel {}
+
+Proses = Counter(dict.values) + For x, y in count.items + sorted (dict.items(), key=lambda x: x[1], reverse = True, + for i in loop 
+  
+
+Output = print (x, y) + print(i[0], i[1])
+'''
+#SourceCode
+from collections import Counter
+def nilai(tabel):
+    count = Counter(tabel.values())
+    print("===Tabel Nilai Siswa===")
+    sort_tabel = sorted(tabel.items(), key=lambda x: x[1], reverse=True)
+    for i in sort_tabel :
+        print(i[0],"=>",i[1])
+    print("===Tabel Sebaran Nilai===")
+    for x, y in count.items():
+        print("Nilai",x,"=>",y,"Kali")
+
+tabel = {
+    'Andi': 10,
+    'Chika': 10,
+    'Tina': 30,
+    'Riko': 70,
+    'Buko': 20,
+    'Ray': 90,
+    'Chiko': 10,
+    'Terena': 20, 	
+}
+
+nilai(tabel)
