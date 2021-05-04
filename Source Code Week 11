@@ -1,0 +1,32 @@
+#Nama : Joiner Tennye Ariel Togatorop
+#NIM : 71200651
+#Universitas Kristen Duta Wacana 
+
+''' Buatlah program sederhana yang dapat mengubah nilai di dalam tuple menjadi bilangan heksadesimal & bilangan biner'''
+
+#Resource : https://www.w3resource.com/python-exercises/tuple/python-tuple-exercise-29.php
+
+
+''' Input : def tuple_ke_bilanganbaru(x), tuple_ke_bilangan(x), x = (1,2,3,4,5)
+
+Proses : int(.join(map(str, x)), bin(), hex()
+
+
+Output : bin() [0b],  hex() [0x]. Print()
+'''
+
+#SourceCode :
+def tuple_ke_bilanganbaru(x):
+    ubahint = int(''.join(map(str,x)))
+    print("Tuples yang di convert ke bentuk Integer : ")
+    print(ubahint)
+    print("Tuples yang di convert ke bentuk Binary : ")
+    print(bin(ubahint))
+    print("Tuples yang di conver ke bentuk Heksadesimal : ")
+    print(hex(ubahint))
+
+tupl1 = (1,2,3)
+tupl2 = (4,5,6,7)
+tupl3 = (8,9,10,11,12)
+
+tuple_ke_bilanganbaru(tupl3)
