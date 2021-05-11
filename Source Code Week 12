@@ -1,0 +1,34 @@
+#Nama : Joiner T A Togatorop
+#NIM : 71200651
+#Universitas Kristen Duta Wacana
+
+
+#Buatlah program sederhana dapat melihat melist data - data tunggal dengan menggunakan sets. 
+
+
+#Source : https://www.w3resource.com/python-exercises/sets/
+
+
+'''
+Input : Frozenset(), "Kode : A3100" etc
+
+
+Proses : Frozenset(Mempunyai nilai yang mutlak) + (Add/Remove), (x |, join) (&, Inteersection) + (^, Symetric difference)
+        (-, difference)
+
+Output : Jenis(), Barang terjual terbanyak, Barang terjual sedikit
+'''
+
+
+#SourceCode :
+Senin = frozenset(["Kode : A3100","Kode : A3300"])
+Selasa = frozenset(["Kode : A3200","Kode : A3200"])
+Rabu = frozenset(["Kode : A3200","Kode : A3200"])
+Kamis = frozenset(["Kode : A3200","Kode : A3200"])
+Jumat = frozenset(["Kode : A3400","Kode : A3400"])
+print("Jenis Barang Terjual Berdasarkan Kode")
+x = frozenset([print(sorted(Senin | Selasa | Rabu | Kamis | Jumat))])
+print("Kode Barang Terjual Terbanyak")
+print(sorted(x & Senin ^ Selasa ^ Rabu ^ Kamis ^ Jumat ))
+print("Kode Barang Terjual Sedikit")
+print(sorted(Senin - Selasa - Rabu - Kamis - Jumat))
