@@ -1,0 +1,34 @@
+#Nama  : Joiner Tennye Ariel Togatorop
+#NIM : 71200651
+#Universitas Kristen Duta Wacana
+
+#Bantu Andi untuk mengecek apakah list bilangan, apakah  bilangan tersebut prima atau tidak!
+
+#Source : https://www.geeksforgeeks.org/recursion-practice-problems-solutions/
+
+
+'''
+Input : List [], Def CekPrima True (Untuk hasil Prima) + (False untuk hasil non-Prima)
+
+Proses : 3 Kondisi, nilai n <= 2, n % i , i * i > n. return (n, i + 1)
+
+Output : If True Print("Bilangan Prima"), Else False, ("Bukan Bilangan Prima). For I in N
+'''
+
+#SourceCode :
+def cekbilPrima(x, i = 2):
+    if (x == 2):
+        return True if (x == 2) else False
+    if (x % i == 0):
+        return False
+    if (i * i  > x ):
+        return True
+
+    return cekbilPrima(x, i + 1)
+
+Data = [1,25,3,44,500,6,7,900,9,10]
+for i in Data :
+    if (cekbilPrima(i)) :
+        print("Bilangan Prima\t", [i])
+    else :
+        print("Bilangan non-Prima\t", [i])
