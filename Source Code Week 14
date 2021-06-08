@@ -1,0 +1,32 @@
+#Nama : Joiner Tennye Ariel Togatorop
+#NIM : 71200651
+#Universitas Kristen Duta Wacana
+
+
+''' Buatlah function, yang bisa menyelesaikan teka-teki Piyu-Piyo. Piyu & Piyo, adalah adek kakak menyukai hal yang sama. Contoh Piyu-Piyo sama2 sukai 'Cicak', tapi tidak menyukai 'lizard' '''
+#Kunci nya : Piyu & Piyo adalah adek kakak kembar, Adek (Lowercase) & Kakak (Uppercase). Kata itu mempunyai Uppercase dan Lowercase
+#Source : https://www.w3resource.com/python-exercises/re/
+
+
+''' 
+Input : def function(x), func('Str')
+  
+Proses :  Kunci = '[A-Z]+[a-z]+$', If re.search(kunci, x) : True,  Else : False
+
+Output : print("Keterangan True"),  print("Keterangan False)
+'''
+
+#SourceCode :
+import re
+
+def patternsearch (x) :
+    kunci = '[A-Z]+[a-z]+$'
+    if re.search(kunci, x) :
+        print("Piyu & Piyo menyukai", (x))
+    else :
+        print("Piyu & Piyo TIDAK menyukai", (x))
+
+patternsearch("Cicak")
+patternsearch("cicak")
+patternsearch("kecoak")
+patternsearch("UAS")
